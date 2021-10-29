@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useAuth from './../../../hooks/useAuth';
+import logo from '../../../images/logo.webp'
 import './Menu.css'
 
 const Menu = () => {
@@ -12,7 +13,9 @@ const Menu = () => {
         <>
             <Navbar bg="info" variant="dark" sticky="top" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">Travel O</Navbar.Brand>
+                    <Navbar.Brand as={NavLink} to="/home">
+                        <img src={logo} alt="" />
+                    </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={NavLink} className="text-dark" to="/home#home">HOME</Nav.Link>
@@ -28,6 +31,10 @@ const Menu = () => {
                                 </Nav.Link>
                             </>
                         ) : (
+                            <>
+                        <Nav.Link as={NavLink} className="text-dark" to="/addorder">GUEST INFO</Nav.Link>
+                        <Nav.Link as={NavLink} className="text-dark" to="/manageorder">MANAGE ORDER</Nav.Link>
+                            
                             <NavDropdown
                                 title={
                                     <img
@@ -41,10 +48,11 @@ const Menu = () => {
                                     <h6>{user?.displayName}</h6>
                                     <p className="m-0 mb-2">{user?.email}</p>
                                     <button onClick={logOut} className="btn btn-primary">
-                                        Log Out
+                                        SIGN OUT
                                     </button>
                                 </div>
                             </NavDropdown>
+                        </>
                         )}
                     </Navbar.Collapse>
                 </Container>

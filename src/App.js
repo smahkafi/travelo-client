@@ -9,6 +9,8 @@ import Contact from './Pages/Contact/Contact';
 import Menu from './Pages/Shared/Menu/Menu';
 import SignIn from './Pages/SignIn/SignIn/SignIn';
 import NotFound from './Pages/NotFound/NotFound';
+import PrivateRoute from './Pages/SignIn/PrivateRoute/PrivateRoute';
+import Booking from './Pages/Booking/Booking';
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
             <Route path="/contact">
               <Contact></Contact>
             </Route>
+            <PrivateRoute path="/booking">
+              <Booking></Booking>
+            </PrivateRoute>
             <Route path="/signin">
               <SignIn></SignIn>
             </Route>
