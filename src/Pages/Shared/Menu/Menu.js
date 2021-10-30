@@ -32,8 +32,7 @@ const Menu = () => {
                             </>
                         ) : (
                             <>
-                        <Nav.Link as={NavLink} className="text-dark" to="/addorder">GUEST INFO</Nav.Link>
-                        <Nav.Link as={NavLink} className="text-dark" to="/manageorder">MANAGE ORDER</Nav.Link>
+                        <Nav.Link as={NavLink} className="text-dark" to="/manageorder">MY BOOKINGS</Nav.Link>
                             
                             <NavDropdown
                                 title={
@@ -44,7 +43,8 @@ const Menu = () => {
                                         }}
                                         src={user?.photoURL}
                                         alt="" />}>
-                                <div className="text-center">
+                                            
+                                <div className="text-center mx-auto">
                                     <h6>{user?.displayName}</h6>
                                     <p className="m-0 mb-2">{user?.email}</p>
                                     <button onClick={logOut} className="btn btn-primary">

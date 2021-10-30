@@ -7,6 +7,7 @@ import img3 from "../../images/about/3.svg"
 import './About.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faIdBadge } from '@fortawesome/free-regular-svg-icons';
 
 const About = () => {
     return (
@@ -81,35 +82,47 @@ const About = () => {
             <div className="row d-flex">
                 <h2>Some Features that Made us Unique</h2>
                 <p>Who are in extremely love with eco friendly system.</p>
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                    <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+                <div className="col-sm-12 col-md-6 col-lg-4 p-5 m-0 mt-1">
+                    <div  className="p-2 bg-primary">
+                        <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
                     <span> Expert Technicians</span>
                     <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    </div>
                 </div>
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
-                    <span> </span>
-                    <p></p>
+                <div className="col-sm-12 col-md-6 col-lg-4 p-5 m-0 mt-1">
+                <div  className="p-2 bg-primary">
+                    <FontAwesomeIcon icon={faIdBadge}></FontAwesomeIcon>
+                    <span>Professional Service</span>
+                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
                 </div>
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
-                    <span> </span>
-                    <p></p>
                 </div>
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
-                    <span> </span>
-                    <p></p>
+                <div className="col-sm-12 col-md-6 col-lg-4 p-5 m-0 mt-1">
+                <div  className="p-2 bg-primary">
+                    {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                    <span> Great Support</span>
+                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
                 </div>
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
-                    <span> </span>
-                    <p></p>
                 </div>
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
-                    <span> </span>
-                    <p></p>
+                <div className="col-sm-12 col-md-6 col-lg-4 p-5 m-0 mt-1">
+                <div  className="p-2 bg-primary">
+                    {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                    <span>Technical Skills </span>
+                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                </div>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-4 p-5 m-0 mt-1">
+                <div  className="p-2 bg-primary">
+                    {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                    <span>Highly Recomended</span>
+                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                </div>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-4 p-5 m-0 mt-1">
+                <div  className="p-2 bg-primary">
+                    {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                    <span>Positive Reviews</span>
+                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                </div>
                 </div>
             </div>
         </div>
