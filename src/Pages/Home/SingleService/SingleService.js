@@ -10,8 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const SingleService = (props) => {
     const { name, img, price, rating, tourComplete, time, _id } = props.service
     return (
-        <div>
-            <div className="col-sm-12 col-md-6 col-lg-4">
+            <div className="col-sm-12 col-md-6 col-lg-4 mt-2">
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
@@ -36,7 +35,6 @@ const SingleService = (props) => {
                     </Card.Body>
                 </Card>
             </div>
-        </div>
     );
 };
 
