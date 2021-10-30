@@ -77,13 +77,3 @@ const Booking = () => {
 };
 
 export default Booking;
-
-
-
-
-
-
-
-// const onSubmit = data => (data => {
-    
-// },[]);

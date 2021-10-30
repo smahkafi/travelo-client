@@ -6,9 +6,11 @@ const HomeSubBanner = () => {
     return ( 
         <div>
             <div className="bg-img">
-                <h2 className="text-white">Choose the Perfect Destination</h2>
-                <p className="text-white">We can manage your dream building A small river named Duden flows by their place</p>
-                <Button className="text-white">Search Place</Button>
+                <h1 className="text-warning">Choose the Perfect Destination</h1>
+                <br />
+                <span className="text-white bg-primary">We can manage your dream building A small river named Duden flows by their place</span>
+                <br />
+                <Button className="text-dark btn-warning">Search Place</Button>
             </div>
         </div>
     );
