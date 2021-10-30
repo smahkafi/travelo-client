@@ -11,6 +11,7 @@ import SignIn from './Pages/SignIn/SignIn/SignIn';
 import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './Pages/SignIn/PrivateRoute/PrivateRoute';
 import Booking from './Pages/Booking/Booking';
+import MyBookings from './Pages/MyBookings/MyBookings';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact></Contact>
+            </Route>
+            <Route path="/mybookings">
+              <MyBookings></MyBookings>
             </Route>
             <PrivateRoute path="/booking/:id">
               <Booking></Booking>

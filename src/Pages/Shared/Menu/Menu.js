@@ -32,7 +32,7 @@ const Menu = () => {
                             </>
                         ) : (
                             <>
-                        <Nav.Link as={NavLink} className="text-dark" to="/manageorder">MY BOOKINGS</Nav.Link>
+                        <Nav.Link as={NavLink} className="text-dark" to="/mybookings">MY BOOKINGS</Nav.Link>
                             
                             <NavDropdown
                                 title={

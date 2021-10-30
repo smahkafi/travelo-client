@@ -36,7 +36,7 @@ const Booking = () => {
                 reset(bookings)
             })
 
-    }, [id, reset])
+    }, [id])
 
     return (
         <div className="d-flex row">
@@ -67,7 +67,9 @@ const Booking = () => {
                 <input placeholder="City" defaultValue="" {...register("city")} />
                 <input placeholder="phone number" defaultValue="" {...register("phone")} />
 
+                <div className="btn btn-success">
                 <input type="submit" value="Booking Now" />
+                </div>
             </form>
             </div>
         </div>
