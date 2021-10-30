@@ -5,6 +5,8 @@ import img1 from "../../images/about/1.svg"
 import img2 from "../../images/about/2.svg"
 import img3 from "../../images/about/3.svg"
 import './About.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
     return (
@@ -73,6 +75,41 @@ const About = () => {
                         <h2>Comfortable Journey</h2>
                         <p>A wonderful serenity has taken to the possession of my entire soul.</p>
                     </div>
+                </div>
+            </div>
+
+            <div className="row d-flex">
+                <h2>Some Features that Made us Unique</h2>
+                <p>Who are in extremely love with eco friendly system.</p>
+                <div className="col-sm-12 col-md-6 col-lg-4">
+                    <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+                    <span> Expert Technicians</span>
+                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-4">
+                {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                    <span> </span>
+                    <p></p>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-4">
+                {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                    <span> </span>
+                    <p></p>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-4">
+                {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                    <span> </span>
+                    <p></p>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-4">
+                {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                    <span> </span>
+                    <p></p>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-4">
+                {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                    <span> </span>
+                    <p></p>
                 </div>
             </div>
         </div>
