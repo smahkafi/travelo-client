@@ -38,8 +38,8 @@ const Booking = () => {
   return (
     <div className="container-fluid admin-section">
       <div className="text-center fw-bold">
-        <h1 className="pt-5">ADMIN DASHBOARD</h1>
-        <h4 className="pt-2 pb-5">TOTAL ORDERS: {bookings.length}</h4>
+        <h1 className="pt-5">ADMINISTRATOR DASHBOARD</h1>
+        <h4 className="pt-2 pb-5">ALL BOOKINGS: {bookings.length}</h4>
       </div>
       <Table responsive="sm" className="my-5">
         <thead>
