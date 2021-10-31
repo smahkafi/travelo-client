@@ -10,8 +10,24 @@ const Booking = () => {
     const [bookings, setBookings] = useState({})
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
+
+    useEffect(() => {
+        fetch('https://frightful-wizard-42893.herokuapp.com/tours')
+            .then(res => res.json())
+            .then(data => {
+                const bookings = data?.find(booking => booking?._id === id)
+                setBookings(bookings)
+                reset(bookings)
+            })
+
+    }, [id])
+
+
+    // booking submit 
     const onSubmit = data => {
-        fetch('https://frightful-wizard-42893.herokuapp.com/bookings', {
+        data.status = "pending"
+        delete data._id;
+        fetch('https://frightful-wizard-42893.herokuapp.com/bookings',  {
         method: 'POST',
         headers: {
             "content-type": "application/json"
@@ -26,16 +42,6 @@ const Booking = () => {
             }
         })
     }
-    useEffect(() => {
-        fetch('https://frightful-wizard-42893.herokuapp.com/tours')
-            .then(res => res.json())
-            .then(data => {
-                const bookings = data?.find(booking => booking?._id === id)
-                setBookings(bookings)
-                reset(bookings)
-            })
-
-    }, [id])
 
     return (
         <div className="d-flex row">
