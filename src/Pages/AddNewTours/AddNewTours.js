@@ -78,7 +78,7 @@ const AddNewTours = () => {
           />
 
           <div className="btn btn-success">
-            <input type="submit" value="Booking Now" />
+            <input type="submit" value="ADD SERVICE" />
           </div>
         </form>
       </div>
