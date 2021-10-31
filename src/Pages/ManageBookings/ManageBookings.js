@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
+import './ManageBookings.css'
 
 const ManageBookings = () => {
   const [manageBookings, setManageBookings] = useState([]);
@@ -29,9 +30,6 @@ const handleConfirmation = id => {
   }
 }
 
-
-
-
   const handleRemove = id => {
     const proceed = window.confirm('Are you sure remove your Booking?');
     if (proceed) {
@@ -50,37 +48,36 @@ const handleConfirmation = id => {
     }
 }
 
-
-
-
-
-
-
-
-
   return (
-    <div>
-      <div className="row">
+    <div className="container">
+      <div className="row mx-auto">
         {manageBookings.map((managebooking) => (
           <div
-            className="col-sm-12 col-md-6 col-lg-4"
+            className="col-sm-12 col-md-6 col-lg-4 text-start mx-auto"
             key={managebooking._id}
             managebooking={managebooking}
           >
-            <div>
-              <img src={managebooking.img} alt="" />
+            {/* card start here */}
+            <div class="card" style={{width: "18rem"}}>
+              <div>
+                <img src={managebooking.img} class="card-img-top single-service-img" alt="Tour Place"/>
+              </div>
+              <div class="card-body">
+              <h2 class="card-title">{managebooking.name}</h2>
+                <h6 class="card-title">Placer: {managebooking.Name}</h6>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cost: $ {managebooking.price}</li>
+                <li class="list-group-item">Placer Email: {managebooking.email}</li>
+                <li class="list-group-item">Address: {managebooking.address}, {managebooking.city}</li>
+                <li class="list-group-item">Phone: {managebooking.phone}</li>
+              </ul>
+              <div class="card-body d-flex justify-content-around">
+                <Button className="bg-danger" onClick={() => handleRemove(managebooking._id)}>REMOVE</Button>
+                <Button className="bg-success" onClick={() => handleConfirmation(managebooking._id)}>CONFIRM</Button>
+              </div>
             </div>
-            <div>
-              <h2>{managebooking.Name}</h2>
-              <p>{managebooking.name}</p>
-              <p>{managebooking.price}</p>
-              <p>{managebooking.email}</p>
-              <p>{managebooking.address}</p>
-              <p>{managebooking.city}</p>
-              <p>{managebooking.phone}</p>
-            </div>
-            <Button onClick={() => handleRemove(managebooking._id)}>Remove</Button>
-            <Button onClick={() => handleConfirmation(managebooking._id)}>confirm</Button>
+            {/* card end here  */}
           </div>
         ))}
       </div>

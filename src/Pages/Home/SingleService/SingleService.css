@@ -5,3 +5,8 @@
 .single-service-root:hover .card-inside{
     background-color: rgb(128, 133, 130) !important;
 }
+
+.single-service-img {
+    min-height: 150px;
+    max-height: 150px;
+}

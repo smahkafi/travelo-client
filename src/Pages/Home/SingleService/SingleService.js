@@ -12,7 +12,7 @@ const SingleService = (props) => {
   return (
     <div className="col-sm-12 col-md-6 col-lg-4 mt-2 single-service-root">
       <Card className="p-1 mx-auto" style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={img} className="border border-danger" />
+        <Card.Img variant="top" src={img} className="border border-danger single-service-img" />
         <Card.Body className=" card-inside">
           <Card.Title>{name}</Card.Title>
           <Card.Text>
