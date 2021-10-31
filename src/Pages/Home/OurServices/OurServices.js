@@ -14,7 +14,7 @@ const OurServices = () => {
         <div className="mt-5 ">
             <h5>SEXY AND HEALTHY</h5>
             <br />
-            <h2>Our Services</h2>
+            <h2>Our Packages</h2>
 
             <Container>
                 <div className="row d-flex">

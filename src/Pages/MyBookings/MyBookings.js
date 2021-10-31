@@ -84,7 +84,7 @@ const Booking = () => {
 
               {Array.from({ length: 1 }).map((_, index) => (
                 <td className="fw-bold" key={index}>
-                  {booking?.price}
+                  {booking?.price} $
                 </td>
               ))}
 
