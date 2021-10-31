@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router";
-import useAuth from "../../hooks/useAuth";
 
 const AddNewTours = () => {
   const { id } = useParams();
-  // const { allContext } = useAuth();
-  // const { user } = allContext
   const [bookings, setBookings] = useState({});
   const {
     register,
