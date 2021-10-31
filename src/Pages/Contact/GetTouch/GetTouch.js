@@ -1,5 +1,5 @@
-// import { faBuilding, faEnvelope, faTty } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBuilding, faEnvelope, faTty } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import './GetTouch.css'
@@ -7,9 +7,9 @@ import './GetTouch.css'
 const GetTouch = () => {
     return (
         <div className="container">
-            <div className="row mt-5">
+            <div className="row mt-5 h-75">
                 <h2>Get in Touch</h2>
-                <div className="col-sm-12 col-md-8 col-lg-8 ">
+                <div className="col-sm-12 col-md-8 col-lg-8 align-self-center">
                 <textarea class=" w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder="Enter Message"></textarea><br />
                     <br />
                     <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name"/><br />
@@ -21,26 +21,27 @@ const GetTouch = () => {
                 <div className="col-sm-12 col-md-4 col-lg-4 align-self-center text-start">
                     <div className="d-flex">
                         <div className="col-sm-2 col-md-6 col-lg-6 align-self-center">
-                        {/* <FontAwesomeIcon className="icon fs-3 text-danger" icon={faBuilding}/> */}
+                        <FontAwesomeIcon className="icon fs-3 text-danger" icon={faBuilding}/>
                         </div>
+
                         <div className="col-sm-10 col-md-6 col-lg-10">
-                        <h4>Buttonwood, California</h4>
-                        <p>Rosemead, CA 91770</p>
+                        <h4>1212, D-block</h4>
+                        <p>Green lane, Dhanmondi 32</p>
                         </div>
                     </div> <hr />
                     <div className="d-flex">
                         <div className="col-sm-2 col-md-6 col-lg-6 align-self-center">
-                        {/* <FontAwesomeIcon className="icon fs-3 text-danger" icon={faTty}/> */}
+                        <FontAwesomeIcon className="icon fs-3 text-danger" icon={faTty}/>
                         </div>
                         <div className="col-sm-10 col-md-6 col-lg-10">
-                        <h4>+1 253 565 2365</h4>
+                        <h4>+880 1703 075837</h4>
                         <p>Mon to Fri 9am to 6pm</p>
                         </div>
                         
                     </div> <hr />
                     <div className="d-flex">
                         <div className="col-sm-2 col-md-6 col-lg-6 align-self-center">
-                            {/* <FontAwesomeIcon className="icon fs-3 text-danger" icon={faEnvelope}/> */}
+                            <FontAwesomeIcon className="icon fs-3 text-danger" icon={faEnvelope}/>
                         </div>
                         <div className="col-sm-10 col-md-6 col-lg-10">
                             <h4>support@travelo.com</h4>

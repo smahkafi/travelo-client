@@ -1,0 +1,7 @@
+.single-service-root:hover{
+    cursor: pointer;
+
+}
+.single-service-root:hover .card-inside{
+    background-color: rgb(128, 133, 130) !important;
+}

@@ -3,14 +3,13 @@ import { useForm } from "react-hook-form";
 import { useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
-
 const Booking = () => {
     const { id } = useParams();
     const { allContext } = useAuth()
     const { user } = allContext
     const [bookings, setBookings] = useState({})
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
-    
+
     const onSubmit = data => {
         fetch('http://localhost:5001/bookings', {
         method: 'POST',

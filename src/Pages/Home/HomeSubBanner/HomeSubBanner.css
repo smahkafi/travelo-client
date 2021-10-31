@@ -1,5 +1,5 @@
 .bg-img {
-    background-image: url(../../../images/home-sub-banner/xbg_3.jpg.pagespeed.ic.jjmsrfAMo7.webp);
+    background-image: url(../../../images/home-sub-banner/HomeSubBanner.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     padding: 8em 0;
@@ -11,4 +11,9 @@
     position: relative;
     /* color: rgba(255, 255, 255, 0.8); */
     /* background: #e2c0bb; */
+}
+
+.subheader-bg{
+    background-color: rgba(130, 141, 141, 0.431);
+    color: rgb(255, 251, 0);
 }
