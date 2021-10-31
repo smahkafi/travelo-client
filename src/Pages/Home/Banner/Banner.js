@@ -30,7 +30,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h1>Second slide label</h1>
+                        <h1>Kaptai Lake</h1>
                         <p>Kaptai Lake is the largest lake in Bangladesh. It is located in the Kaptai Upazila under Rangamati District of Chittagong Division.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
