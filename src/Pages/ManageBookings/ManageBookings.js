@@ -35,7 +35,7 @@ const handleConfirmation = id => {
   const handleRemove = id => {
     const proceed = window.confirm('Are you sure remove your Booking?');
     if (proceed) {
-        const url = `https://frightful-wizard-42893.herokuapp.com/${id}`;
+        const url = `https://frightful-wizard-42893.herokuapp.com/bookings/${id}`;
         fetch(url, {
             method: 'DELETE',
         })
