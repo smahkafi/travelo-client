@@ -55,7 +55,7 @@ const Booking = () => {
 
             <div className="col-sm-12 col-md-6 col-lg-6 mx-auto my-5 border p-0 rounded" style={{ width: "16rem" }}>
                 <h2>this is form side</h2>
-                <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
+                <form className="" onSubmit={handleSubmit(onSubmit)}>
 
                 <input defaultValue={bookings?._id} {...register("offer")} />
 

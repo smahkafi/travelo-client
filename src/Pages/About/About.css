@@ -1,3 +1,18 @@
 .about-content{
     text-align: justify;
+    /* background-color:; */
+}
+
+.card-bg:hover{
+    background: linear-gradient(beige, aqua);
+    cursor:pointer;
+}
+.unique-section{
+    background-color: beige;
+}
+.features{
+    background-color: gainsboro;
+}
+.tour-review{
+    background-color: lavender;
 }
