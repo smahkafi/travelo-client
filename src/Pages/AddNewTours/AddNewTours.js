@@ -16,7 +16,7 @@ const AddNewTours = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    fetch("http://localhost:5001/tours", {
+    fetch("https://frightful-wizard-42893.herokuapp.com/tours", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -32,7 +32,7 @@ const AddNewTours = () => {
       });
   };
   useEffect(() => {
-    fetch("http://localhost:5001/tours")
+    fetch("https://frightful-wizard-42893.herokuapp.com/tours")
       .then((res) => res.json())
       .then((data) => {
         const bookings = data?.find((booking) => booking?._id === id);

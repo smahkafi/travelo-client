@@ -4,7 +4,7 @@ const ManageBookings = () => {
   const [manageBookings, setManageBookings] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5001/bookings")
+    fetch("https://frightful-wizard-42893.herokuapp.com/bookings")
       .then((res) => res.json())
       .then((data) => setManageBookings(data));
   }, []);

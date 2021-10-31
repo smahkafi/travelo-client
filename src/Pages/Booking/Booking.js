@@ -11,7 +11,7 @@ const Booking = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        fetch('http://localhost:5001/bookings', {
+        fetch('https://frightful-wizard-42893.herokuapp.com/bookings', {
         method: 'POST',
         headers: {
             "content-type": "application/json"
@@ -27,7 +27,7 @@ const Booking = () => {
         })
     }
     useEffect(() => {
-        fetch('http://localhost:5001/tours')
+        fetch('https://frightful-wizard-42893.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => {
                 const bookings = data?.find(booking => booking?._id === id)
