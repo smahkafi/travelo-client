@@ -95,9 +95,9 @@ const Booking = () => {
             />
             <input placeholder="City" defaultValue="" {...register("city")} />
             <input
-              placeholder="phone number"
+              placeholder="Phone number"
               defaultValue=""
-              {...register("phone")}
+              {...register("hone")}
             />
 
             <div className="btn btn-success">
